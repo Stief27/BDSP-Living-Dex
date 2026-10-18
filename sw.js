@@ -1,4 +1,4 @@
-const VERSION='bdsp-shell-20261018-r2',SPRITES='bdsp-retro-sprites-r2';
+const VERSION='bdsp-shell-20261018-r3-two-status',SPRITES='bdsp-retro-sprites-r3';
 const CORE=['./','./index.html','./styles.css','./app.js','./data.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png','./icons/fallback-pokemon.svg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(VERSION).then(c=>c.addAll(CORE)));self.skipWaiting()});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==VERSION&&k!==SPRITES).map(k=>caches.delete(k)))));self.clients.claim()});
