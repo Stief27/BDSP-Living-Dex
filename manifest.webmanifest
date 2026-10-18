@@ -1,0 +1,30 @@
+{
+  "id": "./",
+  "name": "Living Dex – Strahlender Diamant",
+  "short_name": "Living Dex",
+  "description": "Dein Living-Dex-Boxenplan für Pokémon Strahlender Diamant",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#0b1120",
+  "theme_color": "#11182b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
